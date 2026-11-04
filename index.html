@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic portfolio of a PhD researcher in theoretical and computational physics.">
+  <meta name="theme-color" content="#080d18">
+  <title>Diganta Samanta — Physics & Quantum Matter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to homepage"><span class="brand-mark">ψ</span><span>DIGANTA SAMANTA<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a>
+      <a href="#publications">Publications</a><a href="#notes">Notes</a><a href="#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THEORETICAL & COMPUTATIONAL PHYSICS</div>
+        <p class="hero-overline">PhD Researcher · Physics</p>
+        <h1>Exploring the<br><em>quantum</em> world<span class="accent">.</span></h1>
+        <p class="hero-description">I study how interactions, topology and non-equilibrium dynamics shape quantum many-body matter.</p>
+        <div class="hero-tags"><span>Statistical Physics</span><span>Quantum Many-Body</span><span>Quantum Spin Liquids</span></div>
+        <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research <span>↗</span></a><a class="text-link" href="#about">A little about me <span>↓</span></a></div>
+        <div class="hero-footnote"><span class="mono">01 / 04</span><span>Curiosity at the edge of the known</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-label art-label-top"><span class="live-dot"></span> QUANTUM MATTER / FIELD NOTES</div>
+        <div id="hero-canvas" class="hero-canvas" role="img" aria-label="Animated three-dimensional view of the Kitaev honeycomb lattice, with x, y and z bonds shown in distinct colors"></div>
+        <div class="art-coordinates mono">ψ(k) = Σ<sub>r</sub> e<sup>ikr</sup> ψ(r)</div>
+        <div class="art-label art-label-bottom">KITAEV / x · y · z BONDS</div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="ticker" aria-label="Research interests"><div class="ticker-track">
+      <span>QUANTUM MANY-BODY</span><b>✳</b><span>FLOQUET PHYSICS</span><b>✳</b><span>MAJORANA FERMIONS</span><b>✳</b><span>STATISTICAL MECHANICS</span><b>✳</b><span>QUANTUM MANY-BODY</span><b>✳</b><span>FLOQUET PHYSICS</span><b>✳</b><span>MAJORANA FERMIONS</span><b>✳</b><span>STATISTICAL MECHANICS</span><b>✳</b>
+    </div></section>
+
+    <section class="section-wrap section-pad about-section" id="about">
+      <div class="section-index">01 <span>/ ABOUT</span></div>
+      <div class="about-grid">
+        <div><p class="eyebrow">A RESEARCHER'S NOTEBOOK</p><h2>Somewhere between<br>theory and <em>discovery.</em></h2></div>
+        <div class="about-copy"><p class="lead">Hello, I'm <strong>Diganta Samanta</strong> — a PhD research scholar in Physics at <strong>Indian Institute of Technology Kharagpur</strong>.</p>
+          <p>My interests lie in statistical physics and quantum many-body theory. I am fascinated by emergent phenomena: how simple microscopic rules can give rise to fractionalized excitations, topological phases and unexpected collective behaviour.</p>
+          <p>This website is my corner of the internet to share research directions, computational projects, publications and notes from the journey.</p>
+          <div class="about-meta"><div><span>RESEARCH</span><b>Quantum matter</b></div><div><span>APPROACH</span><b>Analytical + numerical</b></div><div><span>TOOLKIT</span><b>Python · Julia · C++ · CUDA</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section section-pad" id="research">
+      <div class="section-wrap">
+        <div class="section-index">02 <span>/ RESEARCH</span></div>
+        <div class="section-heading"><div><p class="eyebrow">QUESTIONS THAT KEEP ME CURIOUS</p><h2>Research <em>frontiers.</em></h2></div><p class="heading-note">A few connected themes in the physics of interacting and driven quantum systems.</p></div>
+        <div class="research-grid">
+          <article class="research-card"><div class="card-top"><span>01 — SPIN LIQUIDS</span><span class="card-arrow">↗</span></div><div class="mini-lattice" aria-hidden="true">⌬</div><h3>Kitaev quantum<br>spin liquids</h3><p>Fractionalization, itinerant Majorana matter and emergent ℤ₂ gauge fluxes in exactly solvable spin models.</p><div class="card-keywords">HONEYCOMB MODEL · MAJORANA MATTER</div></article>
+          <article class="research-card"><div class="card-top"><span>02 — NON-EQUILIBRIUM</span><span class="card-arrow">↗</span></div><div class="mini-wave" aria-hidden="true">∿</div><h3>Floquet & driven<br>quantum matter</h3><p>Periodic driving, effective Hamiltonians, energy absorption and long-lived prethermal regimes.</p><div class="card-keywords">PERIODIC DRIVE · PRETHERMALIZATION</div></article>
+          <article class="research-card"><div class="card-top"><span>03 — TOPOLOGY</span><span class="card-arrow">↗</span></div><div class="mini-topology" aria-hidden="true">◎</div><h3>Majorana modes<br>& entanglement</h3><p>Zero modes, edge physics, ground-state degeneracy and entanglement-based diagnostics.</p><div class="card-keywords">ZERO MODES · COVARIANCE MATRICES</div></article>
+          <article class="research-card"><div class="card-top"><span>04 — COMPUTATION</span><span class="card-arrow">↗</span></div><div class="mini-code" aria-hidden="true">{ }</div><h3>Computational<br>many-body physics</h3><p>Exact diagonalization, tensor networks and GPU-accelerated numerical experiments.</p><div class="card-keywords">ED · DMRG · HPC</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad projects-section" id="projects">
+      <div class="section-index">03 <span>/ SELECTED PROJECTS</span></div>
+      <div class="section-heading"><div><p class="eyebrow">FROM HAMILTONIANS TO NUMERICS</p><h2>Work in <em>progress.</em></h2></div><p class="heading-note">Research directions and computational explorations. Update these summaries as projects develop.</p></div>
+      <div class="project-list">
+        <article class="project-row"><div class="project-number">P.01</div><div class="project-main"><div class="project-type">FLOQUET QUANTUM MATTER</div><h3>Fractionalized prethermalization in a driven Kitaev system</h3><p>Exploring the dynamics of matter and flux sectors under periodic protocols, and the possibility of distinct relaxation scales.</p><div class="project-tags"><span>Floquet theory</span><span>Kitaev model</span><span>Majorana fermions</span></div></div><div class="project-status">ONGOING <span>↗</span></div></article>
+        <article class="project-row"><div class="project-number">P.02</div><div class="project-main"><div class="project-type">TOPOLOGICAL QUANTUM MATTER</div><h3>Entanglement diagnostics of Majorana edge modes</h3><p>Using Majorana correlation matrices and disconnected entanglement entropy to investigate edge-mode structures in one-dimensional models.</p><div class="project-tags"><span>DEE</span><span>Quantum compass chain</span><span>DMRG</span></div></div><div class="project-status">ONGOING <span>↗</span></div></article>
+        <article class="project-row"><div class="project-number">P.03</div><div class="project-main"><div class="project-type">NUMERICAL METHODS</div><h3>Finite-size Majorana formulation of the honeycomb model</h3><p>Building finite-lattice formulations with periodic boundary conditions and exploring momentum-space structure and spectra.</p><div class="project-tags"><span>Exact diagonalization</span><span>Majorana representation</span><span>Python</span></div></div><div class="project-status">EXPLORING <span>↗</span></div></article>
+      </div>
+    </section>
+
+    <section class="visual-section section-pad" id="visual-lab">
+      <div class="section-wrap">
+        <div class="section-index">04 <span>/ INTERACTIVE VISUAL LAB</span></div>
+        <div class="section-heading"><div><p class="eyebrow">PHYSICS YOU CAN PLAY WITH</p><h2>The 2D <em>Kitaev model.</em></h2></div><p class="heading-note">A regular hexagonal honeycomb with one x, y and z bond meeting at each bulk site. Zoom or pan the lattice and adjust the couplings.</p></div>
+        <div class="lab-shell">
+          <div class="lab-view"><div id="lab-canvas" class="lab-canvas" role="img" aria-label="Interactive regular hexagonal Kitaev lattice with x, y and z bonds color-coded"></div><div class="lab-overlay mono"><span>2D KITAEV / HONEYCOMB</span><span id="lab-state">J = (1.00, 1.00, 1.00)</span></div><div class="lab-controls-hint">SCROLL TO ZOOM · DRAG TO PAN</div></div>
+          <div class="lab-sidebar"><div class="lab-sidebar-top"><span class="eyebrow">LIVE PARAMETERS</span><span class="live-status"><i></i> INTERACTIVE</span></div>
+            <h3>Bond couplings</h3><p>Adjust the visual weight of the three bond families in this schematic lattice.</p>
+            <label for="jx">Jx <output id="jx-out">1.00</output></label><input id="jx" type="range" min="0" max="2" value="1" step=".05">
+            <label for="jy">Jy <output id="jy-out">1.00</output></label><input id="jy" type="range" min="0" max="2" value="1" step=".05">
+            <label for="jz">Jz <output id="jz-out">1.00</output></label><input id="jz" type="range" min="0" max="2" value="1" step=".05">
+            <div class="lab-legend"><span><i class="dot dot-x"></i> x bonds</span><span><i class="dot dot-y"></i> y bonds</span><span><i class="dot dot-z"></i> z bonds</span></div>
+            <button id="reset-lab" class="button button-outline">Reset view ↺</button>
+            <p class="fine-print">Bond colors and widths show Jx, Jy and Jz. The moving highlights are decorative; this visual does not simulate spin dynamics or calculate the Hamiltonian's spectrum.</p>
+          </div>
+        </div>
+        <div class="equation-strip"><span class="eyebrow">THE MODEL</span><div class="equation">H = − J<sub>x</sub> ∑<sub>⟨ij⟩x</sub> σ<sub>i</sub><sup>x</sup>σ<sub>j</sub><sup>x</sup> − J<sub>y</sub> ∑<sub>⟨ij⟩y</sub> σ<sub>i</sub><sup>y</sup>σ<sub>j</sub><sup>y</sup> − J<sub>z</sub> ∑<sub>⟨ij⟩z</sub> σ<sub>i</sub><sup>z</sup>σ<sub>j</sub><sup>z</sup></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad publications-section" id="publications">
+      <div class="section-index">05 <span>/ PUBLICATIONS</span></div>
+      <div class="section-heading"><div><p class="eyebrow">PAPERS & PREPRINTS</p><h2>Research in <em>print.</em></h2></div><p class="heading-note">A curated list of publications. Replace the example state below with your actual papers when ready.</p></div>
+      <div class="empty-publications"><div class="empty-icon">⌘</div><div><h3>Publications will appear here.</h3><p>Add published papers, preprints, DOI links and downloadable PDFs. No placeholder publications are displayed.</p></div><span class="mono">BIBLIOGRAPHY / 00</span></div>
+    </section>
+
+    <section class="notes-section section-pad" id="notes">
+      <div class="section-wrap">
+        <div class="section-index">06 <span>/ NOTES & WRITING</span></div>
+        <div class="section-heading"><div><p class="eyebrow">THINKING OUT LOUD</p><h2>Notes from the <em>blackboard.</em></h2></div><p class="heading-note">Derivations, concepts, numerical techniques and occasional reflections from the research journey.</p></div>
+        <div class="notes-grid">
+          <a class="note-card" href="#contact"><div class="note-meta"><span>THEORETICAL PHYSICS</span><span>NOTE 001</span></div><h3>Majorana fermions: from spin models to free particles</h3><p>A conceptual route through fractionalization and the Majorana representation.</p><span class="read-more">COMING SOON ↗</span></a>
+          <a class="note-card" href="#contact"><div class="note-meta"><span>FLOQUET THEORY</span><span>NOTE 002</span></div><h3>Building a Floquet operator for a two-step drive</h3><p>Time ordering, stroboscopic evolution and effective descriptions.</p><span class="read-more">COMING SOON ↗</span></a>
+          <a class="note-card" href="#contact"><div class="note-meta"><span>NUMERICAL METHODS</span><span>NOTE 003</span></div><h3>Finite-size momentum grids on a honeycomb lattice</h3><p>Geometry, boundary conditions and reciprocal-space discretization.</p><span class="read-more">COMING SOON ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad contact-section" id="contact">
+      <div class="section-index">07 <span>/ CONTACT</span></div>
+      <div class="contact-content"><p class="eyebrow">OPEN TO IDEAS & COLLABORATIONS</p><h2>Let's talk about<br><em>interesting physics.</em></h2><p>For research discussions, collaborations, or just a good conversation about quantum matter, feel free to get in touch.</p>
+        <a class="button button-primary" href="mailto:DIGANTASAMANTA3@KGPIAN.IITKGP.AC.IN">DIGANTASAMANTA3@KGPIAN.IITKGP.AC.IN ↗</a>
+        <div class="social-links"><a href="https://github.com/Diganta5" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://orcid.org/" target="_blank" rel="noreferrer">ORCID ↗</a><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="#" aria-label="CV PDF">CV (add PDF) ↗</a></div>
+      </div>
+      <div class="contact-symbol" aria-hidden="true">ψ</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">ψ</span><span>DIGANTA SAMANTA<span class="brand-dot">.</span></span></a><span>Designed with curiosity. Built for the long run.</span><span class="mono">© <span id="year"></span> DIGANTA SAMANTA</span></div></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
